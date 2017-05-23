@@ -1,0 +1,16 @@
+{
+  "name": "metigy/php-sdk",
+  "description": "Container for common PHP libraries",
+  "homepage": "https://bitbucket.org/scrmhub/php-sdk",
+  "type": "project",
+  "require": {
+    "php": ">=5.5.9",
+    "php-di/php-di": "^5.4"
+  },
+  "autoload": {
+    "psr-4": { "Metigy\\PHPSDK\\": "lib/" }
+  },
+  "autoload-dev" : {
+    "psr-4": { "Metigy\\PHPSDK\\Tests\\": "tests/" }
+  }
+}
