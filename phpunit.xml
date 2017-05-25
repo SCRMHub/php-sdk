@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit colors="true">
+    <testsuites>
+        <testsuite name="Webhook">
+            <directory>./tests/Webhook/</directory>
+        </testsuite>
+        <testsuite name="Util">
+            <directory>./tests/Util/</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
