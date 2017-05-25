@@ -3,6 +3,7 @@
   "description": "Container for common PHP libraries",
   "homepage": "https://bitbucket.org/scrmhub/php-sdk",
   "type": "library",
+  "license": "MIT",
   "require": {
     "php": ">=5.5.9"
   },
