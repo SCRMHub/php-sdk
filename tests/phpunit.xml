@@ -2,10 +2,10 @@
 <phpunit colors="true">
     <testsuites>
         <testsuite name="Webhook">
-            <directory>./tests/Webhook/</directory>
+            <directory>./Webhook/</directory>
         </testsuite>
         <testsuite name="Util">
-            <directory>./tests/Util/</directory>
+            <directory>./Util/</directory>
         </testsuite>
     </testsuites>
 </phpunit>
