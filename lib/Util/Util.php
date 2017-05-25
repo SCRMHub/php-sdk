@@ -1,6 +1,6 @@
 <?php
 
-namespace Metigy\PHPSDK\Util;
+namespace SCRMHub\PHPSDK\Util;
 
 class Util implements UtilInterface
 {

@@ -1,21 +1,21 @@
 <?php
 
-namespace Metigy\PHPSDK\Webhook {
+namespace SCRMHub\PHPSDK\Webhook {
 
     function time() {
-        if (\Metigy\PHPSDK\Tests\Webhook\SignatureTest::$overrideTime === false) {
+        if (\SCRMHub\PHPSDK\Tests\Webhook\SignatureTest::$overrideTime === false) {
             return \time();
         }
 
-        return \Metigy\PHPSDK\Tests\Webhook\SignatureTest::$currentTime;
+        return \SCRMHub\PHPSDK\Tests\Webhook\SignatureTest::$currentTime;
     }
 }
 
 
-namespace Metigy\PHPSDK\Tests\Webhook {
+namespace SCRMHub\PHPSDK\Tests\Webhook {
 
-    use \Metigy\PHPSDK\Webhook\Signature;
-    use \Metigy\PHPSDK\Util\UtilInterface;
+    use \SCRMHub\PHPSDK\Webhook\Signature;
+    use \SCRMHub\PHPSDK\Util\UtilInterface;
 
     class SignatureTest extends \PHPUnit_Framework_TestCase
     {
@@ -98,7 +98,7 @@ namespace Metigy\PHPSDK\Tests\Webhook {
         }
 
         /**
-         * @expectedException \Metigy\PHPSDK\Webhook\Exception\SignatureVerificationException
+         * @expectedException \SCRMHub\PHPSDK\Webhook\Exception\SignatureVerificationException
          * @expectedExceptionMessage Unable to extract timestamp from signature
          */
         public function testVerifyPayloadInvalidTimestamp()
@@ -122,7 +122,7 @@ namespace Metigy\PHPSDK\Tests\Webhook {
         }
 
         /**
-         * @expectedException \Metigy\PHPSDK\Webhook\Exception\SignatureVerificationException
+         * @expectedException \SCRMHub\PHPSDK\Webhook\Exception\SignatureVerificationException
          * @expectedExceptionMessage Unable to extract timestamp from signature
          */
         public function testVerifyPayloadNonNumericTimestamp()
@@ -146,7 +146,7 @@ namespace Metigy\PHPSDK\Tests\Webhook {
         }
 
         /**
-         * @expectedException \Metigy\PHPSDK\Webhook\Exception\SignatureVerificationException
+         * @expectedException \SCRMHub\PHPSDK\Webhook\Exception\SignatureVerificationException
          * @expectedExceptionMessage Unable to extract value from signature
          */
         public function testVerifyPayloadInvalidValue() {
@@ -169,7 +169,7 @@ namespace Metigy\PHPSDK\Tests\Webhook {
         }
 
         /**
-         * @expectedException \Metigy\PHPSDK\Webhook\Exception\SignatureVerificationException
+         * @expectedException \SCRMHub\PHPSDK\Webhook\Exception\SignatureVerificationException
          * @expectedExceptionMessage Value mismatch the expected signature for payload
          */
         public function testVerifyPayloadMismatch() {
@@ -193,7 +193,7 @@ namespace Metigy\PHPSDK\Tests\Webhook {
         }
 
         /**
-         * @expectedException \Metigy\PHPSDK\Webhook\Exception\SignatureVerificationException
+         * @expectedException \SCRMHub\PHPSDK\Webhook\Exception\SignatureVerificationException
          * @expectedExceptionMessage Timestamp outside the tolerance zone
          */
         public function testVerifyPayloadExpiredTimestamp() {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Metigy\PHPSDK\Util {
+namespace SCRMHub\PHPSDK\Util {
 
     function function_exists($functionName) {
-        if (\Metigy\PHPSDK\Tests\Util\UtilTest::$hashEqualsExists === false) {
+        if (\SCRMHub\PHPSDK\Tests\Util\UtilTest::$hashEqualsExists === false) {
             return false;
         }
 
@@ -25,9 +25,9 @@ namespace Metigy\PHPSDK\Util {
     }
 }
 
-namespace Metigy\PHPSDK\Tests\Util {
+namespace SCRMHub\PHPSDK\Tests\Util {
 
-    use \Metigy\PHPSDK\Util\Util;
+    use \SCRMHub\PHPSDK\Util\Util;
 
     class UtilTest extends \PHPUnit_Framework_TestCase
     {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Metigy\PHPSDK\Webhook;
+namespace SCRMHub\PHPSDK\Webhook;
 
 
-use Metigy\PHPSDK\Util;
-use Metigy\PHPSDK\Webhook\Exception\SignatureVerificationException;
+use SCRMHub\PHPSDK\Util;
+use SCRMHub\PHPSDK\Webhook\Exception\SignatureVerificationException;
 
 
 /**
@@ -15,7 +15,7 @@ use Metigy\PHPSDK\Webhook\Exception\SignatureVerificationException;
  * Value is the signed payload, which is hashed value of "timestamp.payload".
  * "timestamp.payload" is referred to as timed payload.
  *
- * @package Metigy\PHPSDK\Webhook
+ * @package SCRMHub\PHPSDK\Webhook
  */
 class Signature implements SignatureInterface
 {

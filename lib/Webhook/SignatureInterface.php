@@ -1,6 +1,6 @@
 <?php
 
-namespace Metigy\PHPSDK\Webhook;
+namespace SCRMHub\PHPSDK\Webhook;
 
 interface SignatureInterface
 {

@@ -1,5 +1,5 @@
 <?php
 
-namespace Metigy\PHPSDK\Webhook\Exception;
+namespace SCRMHub\PHPSDK\Webhook\Exception;
 
 class SignatureVerificationException extends \Exception {};
