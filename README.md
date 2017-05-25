@@ -1,3 +1,3 @@
 # README #
 
-SDK to talk to Admin repository.
+Container for common PHP libraries
